@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freedom Movers - Bucks County's most trusted local and long distance moving company. Licensed, insured, stress-free moves. Get 10% off today!">
+    <title>Freedom Movers | Bucks County's Trusted Moving Company</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo"><img src="images/logo.png" alt="Freedom Movers" class="logo-img"></div>
+            <div class="header-right">
+                <a href="tel:+12674149751" class="phone-number">
+                    <svg class="phone-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    (267) 414-9751
+                </a>
+                <a href="#claim-form" class="btn btn-primary header-cta">Get a Free Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero + Form Combined Section -->
+        <section class="hero-form-section">
+            <div class="container">
+                <div class="hero-form-grid">
+                    <!-- Left: Hero Content -->
+                    <div class="hero-content">
+                        <h1 class="hero-headline">Bucks County's Most Trusted Movers</h1>
+                        <p class="hero-subheadline">Local & long distance moving — licensed, insured, and stress-free.</p>
+                        
+                        <!-- Trust Icons Inline -->
+                        <div class="hero-trust">
+                            <div class="hero-trust-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <span>4.9/5 Google</span>
+                            </div>
+                            <div class="hero-trust-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                                <span>Licensed & Insured</span>
+                            </div>
+                            <div class="hero-trust-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
+                                <span>Best of Bucks County</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="form-wrapper" id="claim-form">
+                        <!-- Urgency Banner -->
+                        <div class="urgency-banner">
+                            <div class="urgency-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            </div>
+                            <div class="urgency-text">
+                                <strong>LIMITED TIME:</strong> 10% Off Expires In
+                                <span id="countdown-timer" class="countdown">30 days</span>
+                            </div>
+                        </div>
+
+                        <h2 class="form-heading">Claim Your 10% Discount</h2>
+                        <p class="form-subheading">Fill out your details and we'll reach out with your discounted quote.</p>
+                        
+                        <form id="quote-form" class="quote-form" action="success.html" method="GET">
+                            <div class="form-group">
+                                <label for="name">First & Last Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Smith">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(267) 414-9751">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="zip-from">Moving From (Zip)</label>
+                                    <input type="text" id="zip-from" name="zip-from" required placeholder="18901" pattern="[0-9]{5}" maxlength="5">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip-to">Moving To (Zip)</label>
+                                    <input type="text" id="zip-to" name="zip-to" required placeholder="19067" pattern="[0-9]{5}" maxlength="5">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large btn-full">Claim My 10% Off Now</button>
+                            <p class="form-disclaimer">No spam. No hidden fees. We'll contact you within 24 hours.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof">
+            <!-- Award Banner -->
+            <div class="award-banner">
+                <div class="container">
+                    <div class="award-content">
+                        <svg class="award-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
+                        <h2>Proud Winner — Best of Bucks County, 4 Years in a Row</h2>
+                        <p>Voted by the Bucks County community for excellence in moving services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="carousel-section">
+                <div class="container">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="images/bob23.jpg" alt="Best of Bucks County 2023 Award">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/bob22.png" alt="Best of Bucks County 2022 Award">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/bob21.jpg" alt="Best of Bucks County 2021 Award">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/bob20.jpg" alt="Best of Bucks County 2020 Award">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" aria-label="Next slide">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                        </button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active" aria-label="Go to slide 1"></button>
+                            <button class="carousel-dot" aria-label="Go to slide 2"></button>
+                            <button class="carousel-dot" aria-label="Go to slide 3"></button>
+                            <button class="carousel-dot" aria-label="Go to slide 4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yelp Reviews -->
+            <div class="reviews-section">
+                <div class="container">
+                    <div class="reviews-header">
+                        <h2>What our customers are saying</h2>
+                        <div class="yelp-badge">
+                            <svg class="yelp-logo" viewBox="0 0 24 24" fill="currentColor"><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.333-2.089-3.041l-.205-.319c-.227-.349-.158-.76.161-1.011.319-.251.729-.251.998-.003l.453.405c.649.581.857.756 1.013.86.153.1.263.143.357.143.094 0 .223-.035.357-.143l.117-.1c.18-.152.357-.381.413-.641.082-.377-.114-.755-.455-.922l-.285-.139c-.375-.183-1.118-.563-2.01-1.202l-.282-.205c-.295-.218-.407-.588-.279-.904.127-.316.449-.509.79-.473.34.036 1.082.217 2.205.539l.37.107c.455.132.955.287 1.359.463.561.246.968.71 1.006 1.238l.007.076c.01.138.031.295-.022.515zm-9.214-6.468c.11.336.02.704-.231.934-.266.245-.647.264-.916.047l-.473-.381c-1.232-.989-1.716-1.358-1.937-1.393-.247-.039-.443.133-.478.327-.034.196.042.453.24.76l.173.27c.216.337.694 1.076 1.107 1.803l.148.265c.164.296.126.663-.096.904-.222.242-.568.313-.858.177-.29-.137-.98-.594-2.093-1.345l-.326-.22c-.371-.251-.708-.49-.971-.72-.438-.386-.633-.93-.529-1.451.099-.495.431-.925.926-1.201l.117-.066c1.1-.612 4.114-2.036 4.538-2.134.344-.08.707.072.891.372.166.271.185.607.034.877-.054.096-.143.193-.238.293-.216.229-.572.607-.93 1.041l-.098.12c-.106.132-.131.312-.066.476l.066.145c.252.513 1.03 1.078 2.04 1.555z"/></svg>
+                            <span>5-star rated on Yelp</span>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p class="review-text">"What a great experience! From the first call with Christina to the home visit by Randy, I knew I found my movers. Very efficient and 100% honest! On moving day Mario and Matt arrived exactly on time and couldn't be nicer guys! Handled my stuff very carefully. Highly recommend them for any move!"</p>
+                            <div class="review-author">
+                                <strong>Matt T.</strong>
+                                <span>Blue Bell, PA</span>
+                            </div>
+                            <div class="review-source">
+                                <svg class="yelp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.333-2.089-3.041l-.205-.319c-.227-.349-.158-.76.161-1.011.319-.251.729-.251.998-.003l.453.405c.649.581.857.756 1.013.86.153.1.263.143.357.143.094 0 .223-.035.357-.143l.117-.1c.18-.152.357-.381.413-.641.082-.377-.114-.755-.455-.922l-.285-.139c-.375-.183-1.118-.563-2.01-1.202l-.282-.205c-.295-.218-.407-.588-.279-.904.127-.316.449-.509.79-.473.34.036 1.082.217 2.205.539l.37.107c.455.132.955.287 1.359.463.561.246.968.71 1.006 1.238l.007.076c.01.138.031.295-.022.515zm-9.214-6.468c.11.336.02.704-.231.934-.266.245-.647.264-.916.047l-.473-.381c-1.232-.989-1.716-1.358-1.937-1.393-.247-.039-.443.133-.478.327-.034.196.042.453.24.76l.173.27c.216.337.694 1.076 1.107 1.803l.148.265c.164.296.126.663-.096.904-.222.242-.568.313-.858.177-.29-.137-.98-.594-2.093-1.345l-.326-.22c-.371-.251-.708-.49-.971-.72-.438-.386-.633-.93-.529-1.451.099-.495.431-.925.926-1.201l.117-.066c1.1-.612 4.114-2.036 4.538-2.134.344-.08.707.072.891.372.166.271.185.607.034.877-.054.096-.143.193-.238.293-.216.229-.572.607-.93 1.041l-.098.12c-.106.132-.131.312-.066.476l.066.145c.252.513 1.03 1.078 2.04 1.555z"/></svg>
+                                Posted on Yelp
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p class="review-text">"We found Freedom Movers through a mail flyer and decided to give them a try. They are a small family owned company with personalized service. Randy is the owner and was great to work with. His team was polite and professional. The move went very smoothly and nothing got damaged or broken. Would definitely recommend."</p>
+                            <div class="review-author">
+                                <strong>Jeri S.</strong>
+                                <span>New Hope, PA</span>
+                            </div>
+                            <div class="review-source">
+                                <svg class="yelp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.333-2.089-3.041l-.205-.319c-.227-.349-.158-.76.161-1.011.319-.251.729-.251.998-.003l.453.405c.649.581.857.756 1.013.86.153.1.263.143.357.143.094 0 .223-.035.357-.143l.117-.1c.18-.152.357-.381.413-.641.082-.377-.114-.755-.455-.922l-.285-.139c-.375-.183-1.118-.563-2.01-1.202l-.282-.205c-.295-.218-.407-.588-.279-.904.127-.316.449-.509.79-.473.34.036 1.082.217 2.205.539l.37.107c.455.132.955.287 1.359.463.561.246.968.71 1.006 1.238l.007.076c.01.138.031.295-.022.515zm-9.214-6.468c.11.336.02.704-.231.934-.266.245-.647.264-.916.047l-.473-.381c-1.232-.989-1.716-1.358-1.937-1.393-.247-.039-.443.133-.478.327-.034.196.042.453.24.76l.173.27c.216.337.694 1.076 1.107 1.803l.148.265c.164.296.126.663-.096.904-.222.242-.568.313-.858.177-.29-.137-.98-.594-2.093-1.345l-.326-.22c-.371-.251-.708-.49-.971-.72-.438-.386-.633-.93-.529-1.451.099-.495.431-.925.926-1.201l.117-.066c1.1-.612 4.114-2.036 4.538-2.134.344-.08.707.072.891.372.166.271.185.607.034.877-.054.096-.143.193-.238.293-.216.229-.572.607-.93 1.041l-.098.12c-.106.132-.131.312-.066.476l.066.145c.252.513 1.03 1.078 2.04 1.555z"/></svg>
+                                Posted on Yelp
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p class="review-text">"Randy was helpful and responsive from my first call, and promised the best crew of movers in Bucks County. He delivered! Our recent move with Freedom Movers was probably the most pleasant moving experience I've ever had. The quote was fair and the team exceeded expectations."</p>
+                            <div class="review-author">
+                                <strong>John A.</strong>
+                                <span>Southampton, PA</span>
+                            </div>
+                            <div class="review-source">
+                                <svg class="yelp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.333-2.089-3.041l-.205-.319c-.227-.349-.158-.76.161-1.011.319-.251.729-.251.998-.003l.453.405c.649.581.857.756 1.013.86.153.1.263.143.357.143.094 0 .223-.035.357-.143l.117-.1c.18-.152.357-.381.413-.641.082-.377-.114-.755-.455-.922l-.285-.139c-.375-.183-1.118-.563-2.01-1.202l-.282-.205c-.295-.218-.407-.588-.279-.904.127-.316.449-.509.79-.473.34.036 1.082.217 2.205.539l.37.107c.455.132.955.287 1.359.463.561.246.968.71 1.006 1.238l.007.076c.01.138.031.295-.022.515zm-9.214-6.468c.11.336.02.704-.231.934-.266.245-.647.264-.916.047l-.473-.381c-1.232-.989-1.716-1.358-1.937-1.393-.247-.039-.443.133-.478.327-.034.196.042.453.24.76l.173.27c.216.337.694 1.076 1.107 1.803l.148.265c.164.296.126.663-.096.904-.222.242-.568.313-.858.177-.29-.137-.98-.594-2.093-1.345l-.326-.22c-.371-.251-.708-.49-.971-.72-.438-.386-.633-.93-.529-1.451.099-.495.431-.925.926-1.201l.117-.066c1.1-.612 4.114-2.036 4.538-2.134.344-.08.707.072.891.372.166.271.185.607.034.877-.054.096-.143.193-.238.293-.216.229-.572.607-.93 1.041l-.098.12c-.106.132-.131.312-.066.476l.066.145c.252.513 1.03 1.078 2.04 1.555z"/></svg>
+                                Posted on Yelp
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p class="review-text">"The quote was the best I received, but the professionalism and care of the items I was shipping blew me away. His price was reasonable and less than competitors. Family owned business with personalized service — you can tell they actually care about doing a good job."</p>
+                            <div class="review-author">
+                                <strong>David M.</strong>
+                                <span>Langhorne, PA</span>
+                            </div>
+                            <div class="review-source">
+                                <svg class="yelp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.333-2.089-3.041l-.205-.319c-.227-.349-.158-.76.161-1.011.319-.251.729-.251.998-.003l.453.405c.649.581.857.756 1.013.86.153.1.263.143.357.143.094 0 .223-.035.357-.143l.117-.1c.18-.152.357-.381.413-.641.082-.377-.114-.755-.455-.922l-.285-.139c-.375-.183-1.118-.563-2.01-1.202l-.282-.205c-.295-.218-.407-.588-.279-.904.127-.316.449-.509.79-.473.34.036 1.082.217 2.205.539l.37.107c.455.132.955.287 1.359.463.561.246.968.71 1.006 1.238l.007.076c.01.138.031.295-.022.515zm-9.214-6.468c.11.336.02.704-.231.934-.266.245-.647.264-.916.047l-.473-.381c-1.232-.989-1.716-1.358-1.937-1.393-.247-.039-.443.133-.478.327-.034.196.042.453.24.76l.173.27c.216.337.694 1.076 1.107 1.803l.148.265c.164.296.126.663-.096.904-.222.242-.568.313-.858.177-.29-.137-.98-.594-2.093-1.345l-.326-.22c-.371-.251-.708-.49-.971-.72-.438-.386-.633-.93-.529-1.451.099-.495.431-.925.926-1.201l.117-.066c1.1-.612 4.114-2.036 4.538-2.134.344-.08.707.072.891.372.166.271.185.607.034.877-.054.096-.143.193-.238.293-.216.229-.572.607-.93 1.041l-.098.12c-.106.132-.131.312-.066.476l.066.145c.252.513 1.03 1.078 2.04 1.555z"/></svg>
+                                Posted on Yelp
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Strip -->
+        <section class="cta-strip">
+            <div class="container">
+                <h2>Ready to save 10% on your move?</h2>
+                <a href="#claim-form" class="btn btn-white btn-large">Claim My Discount Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Freedom Movers</div>
+                    <p>Bucks County's trusted movers</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+12674149751" class="footer-phone">(267) 414-9751</a>
+                </div>
+                <div class="footer-areas">
+                    <p><strong>Service Areas:</strong> Doylestown, Newtown, Langhorne, Yardley, Warminster, and surrounding areas</p>
+                </div>
+                <div class="footer-legal">
+                    <p>Licensed & Insured</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+12674149751" class="mobile-btn mobile-btn-call">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call Now
+        </a>
+        <a href="#claim-form" class="mobile-btn mobile-btn-cta">
+            Claim 10% Off
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
