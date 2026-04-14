@@ -286,6 +286,14 @@ function initFormValidation() {
                 })
             });
             
+            // Fire Meta Lead event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Quote Request',
+                    content_category: 'Moving Quote'
+                });
+            }
+            
             // Redirect to success page
             window.location.href = 'success.html?name=' + encodeURIComponent(name.split(' ')[0]);
             
